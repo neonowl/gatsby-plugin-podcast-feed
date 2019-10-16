@@ -1,8 +1,10 @@
 Create an RSS feed for podcasts with your Gatsby Site. While gatsby-plugin-feed is great for creating RSS feeds for blogs, it is difficult to make the iTunes custom_elements found in the RSS [package](https://www.npmjs.com/package/rss).
 
+Fork of https://github.com/csellis/gatsby-plugin-podcast-feed that adds the `enclosure` tag to the items
+
 ## Install
 
-`npm install --save gatsby-plugin-podcast-feed`
+`npm install --save gatsby-plugin-podcast-rss-feed`
 
 ## How to use
 
@@ -56,7 +58,7 @@ const feedOptions = {
 module.exports = {
     plugins: [
         {
-            resolve: `gatsby-plugin-podcast-feed`,
+            resolve: `gatsby-plugin-podcast-rss-feed`,
             options: {
                 feedOptions
             },
@@ -75,6 +77,7 @@ title: "Introduction"
 slug: "introduction"
 date: "2019-04-06"
 url: https://traffic.libsyn.com/lkajsdlkfjalksdjf/alskdjflkjasdf.mp3
+length: 206820339
 categories:
   - Ohh Oh
   - It's magic

@@ -26,6 +26,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
                 url
                 number
                 date
+                size
               }
             }
           }
@@ -42,7 +43,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
 
   episodes.forEach(edge => {
     const { html, excerpt, id } = edge.node;
-    const { title, number, date, url, categories } = edge.node.frontmatter;
+    const { title, number, date, url, categories, length } = edge.node.frontmatter;
 
     feed.item({
       guid: id,
@@ -69,6 +70,11 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
           },
         },
       ],
+      enclosure: {
+        url,
+        length,
+        type: 'audio/mpeg'
+      },
     });
   });
 

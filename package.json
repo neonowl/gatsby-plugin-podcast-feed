@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-plugin-podcast-feed",
+  "name": "gatsby-plugin-podcast-rss-feed",
   "keywords": [
     "rss",
     "podcast",
@@ -12,11 +12,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Chris Ellis",
+  "author": "Erick Márquez",
   "license": "MIT",
   "dependencies": {
     "fs-extra": "^8.0.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "rss": "^1.2.2"
   }
 }
