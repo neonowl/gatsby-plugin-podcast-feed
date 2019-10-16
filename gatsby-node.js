@@ -26,7 +26,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
                 url
                 number
                 date
-                size
+                length
               }
             }
           }

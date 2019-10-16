@@ -6,7 +6,7 @@
     "gatsby",
     "gatsby-plugin"
   ],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Gatsby Plugin for podcast feeds.",
   "main": "index.js",
   "scripts": {
