@@ -16,7 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "fs-extra": "^8.0.1",
-    "lodash": "^4.17.15",
     "rss": "^1.2.2"
   }
 }
