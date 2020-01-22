@@ -56,7 +56,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
       custom_elements: [
         { 'content:encoded': html },
         { pubDate: date },
-        { 'itunes:explicit': 'no' },
+        { 'itunes:explicit': feedOptions.explicit },
         { 'itunes:episodeType': 'full' },
         { 'itunes:title': title },
         { 'itunes:episode': number },
