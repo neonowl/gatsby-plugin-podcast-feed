@@ -4,7 +4,7 @@ Fork of https://github.com/csellis/gatsby-plugin-podcast-feed that adds the `enc
 
 ## Install
 
-`npm install --save gatsby-plugin-podcast-rss-feed`
+`npm install --save neonowl/gatsby-plugin-podcast-rss-feed#WIP`
 
 ## How to use
 
