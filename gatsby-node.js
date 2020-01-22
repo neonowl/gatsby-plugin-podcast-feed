@@ -48,7 +48,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
     feed.item({
       guid: id,
       title,
-      url,
+      url: feedOptions.site_url,
       description: excerpt,
       categories,
       author: feedOptions.managingEditor,
