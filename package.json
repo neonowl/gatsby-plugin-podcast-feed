@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "fs-extra": "^8.0.1",
-    "rss": "^1.2.2"
+    "rss": "neonowl/node-rss#no_cdata"
   },
   "repository": {
     "type" : "git",
