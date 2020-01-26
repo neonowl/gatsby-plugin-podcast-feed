@@ -43,14 +43,13 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
 
   episodes.forEach(edge => {
     const { html, excerpt, id } = edge.node;
-    const { title, number, date, url, categories, size } = edge.node.frontmatter;
+    const { title, number, date, url, size } = edge.node.frontmatter;
 
     feed.item({
       guid: id,
       title,
       url: feedOptions.site_url,
       description: excerpt,
-      // categories,
       author: feedOptions.managingEditor,
       date,
       custom_elements: [
